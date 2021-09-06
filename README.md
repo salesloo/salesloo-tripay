@@ -19,6 +19,10 @@ For backwards compatibility, if this section is missing, the full length of the 
 Markdown parsed.
 
 == Changelog ==
+= 1.0.3 =
+
+* Fix bug webhook auth
+
 = 1.0.2 =
 
 * Fix unable to update checker

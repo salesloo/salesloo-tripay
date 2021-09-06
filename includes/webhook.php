@@ -43,8 +43,6 @@ class Webhook
 
     public function check_autorize()
     {
-        return true;
-
         $callbackSignature = isset($_SERVER['HTTP_X_CALLBACK_SIGNATURE']) ? $_SERVER['HTTP_X_CALLBACK_SIGNATURE'] : '';
         $payload = file_get_contents("php://input");
         $signature = hash_hmac('sha256', $payload, get_option('tripay_private_key'));
