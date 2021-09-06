@@ -1,6 +1,6 @@
 <?php
 
-namespace Salesloo_Addon;
+namespace Salesloo_Tripay;
 
 /**
  * Fired during plugin deactivation.
@@ -8,8 +8,8 @@ namespace Salesloo_Addon;
  * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @since      1.0.0
- * @package    salesloo-addon
- * @subpackage salesloo-addon/includes
+ * @package    Salesloo_Tripay
+ * @subpackage Salesloo_Tripay/includes
  * @author     Taufik Hidayat <taufik@fiqhidayat.com>
  */
 class Deactivator
