@@ -254,7 +254,7 @@ class Salesloo_Tripay
 			return false;
 		}
 
-		if (version_compare(SALESLOO_VERSION, '1.0.4', '<')) {
+		if (version_compare(SALESLOO_VERSION, '1.0.5', '<')) {
 			add_action('admin_notices', [$this, 'admin_notice_missing_main_plugin_version']);
 			return false;
 		}
