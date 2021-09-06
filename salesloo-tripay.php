@@ -15,7 +15,7 @@
  * Plugin Name:       Salesloo Tripay
  * Plugin URI:        https://www.salesloo.com
  * Description:       Indonesian Payment gateway for Salesloo
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Salesloo
  * Author URI:        https://www.salesloo.com
  * License:           GPL-2.0+
@@ -34,10 +34,12 @@ if (!defined('WPINC')) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define('SALESLOO_TRIPAY_VERSION', '1.0.1');
+define('SALESLOO_TRIPAY_VERSION', '1.0.2');
 define('SALESLOO_TRIPAY_URL', plugin_dir_url(__FILE__));
 define('SALESLOO_TRIPAY_PATH', plugin_dir_path(__FILE__));
 define('SALESLOO_TRIPAY_ROOT', __FILE__);
+
+require 'update-checker/plugin-update-checker.php';
 
 /**
  * The code that runs during plugin activation.
