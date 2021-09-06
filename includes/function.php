@@ -57,7 +57,6 @@ function salesloo_tripay_get_payment($invoice)
         $data = Salesloo_Tripay\Tripay::init()->get_payment($reference);
 
         if ($data && $data['expired_time'] > strtotime('now')) {
-            __debug($data);
             return $data;
         }
     }
@@ -153,7 +152,7 @@ function salesloo_tripay_payment_handle_action($invoice)
 {
     global $___salesloo;
 
-    if (in_array(___salesloo('invoice')->status, ['cancelled', 'completed'])) return;
+    if (in_array($invoice->status, ['cancelled', 'completed'])) return;
 
     $payment = salesloo_tripay_get_payment($invoice);
 
