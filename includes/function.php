@@ -62,6 +62,11 @@ function salesloo_tripay_get_payment($invoice)
     }
 
     $data = salesloo_tripay_request_payment($invoice);
+    if (is_wp_error($data)) {
+        $message = 'Failed to open request payment with message"' . $data->get_error_message() . '". Please refresh this page or contact admin';
+        wp_die($message);
+    }
+
     salesloo_tripay_save_payment($invoice->ID, $data['reference']);
 
     return $data;
