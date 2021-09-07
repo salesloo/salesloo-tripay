@@ -32,7 +32,7 @@ foreach (array(
 	Puc_v4p6_Factory::addVersion($pucGeneralClass, $pucVersionedClass, '4.6');
 }
 
-$UpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+$updateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'https://github.com/salesloo/salesloo-tripay',
 	SALESLOO_TRIPAY_ROOT,
 	'salesloo-tripay'

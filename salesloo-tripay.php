@@ -15,7 +15,7 @@
  * Plugin Name:       Salesloo Tripay
  * Plugin URI:        https://www.salesloo.com
  * Description:       Indonesian Payment gateway for Salesloo
- * Version:           1.0.3
+ * Version:           1.0.4
  * Author:            Salesloo
  * Author URI:        https://www.salesloo.com
  * License:           GPL-2.0+
