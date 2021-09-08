@@ -88,6 +88,11 @@ class Setting
             'description' => __('Enable sanbox only to test payments with tripay sanbox', 'salesloo')
         ]);
 
+        \salesloo_field_heading([
+            'label' => __('Moota Webhook', 'salesloo'),
+            'description' => get_rest_url(null, 'salesloo-moota/v1/webhook'),
+        ]);
+
         if (get_option('tripay_api_key') && get_option('tripay_private_key')) {
 
             $channels = \Salesloo_Tripay::instance()->tripay->get_payment_channels();
