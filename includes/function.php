@@ -93,10 +93,10 @@ function salesloo_tripay_payment_print_action($class)
     <div class="border-t border-dashed py-10">
         <div class="flex flex-col sm:flex-row space-y-5 sm:space-y-0 items-center">
             <div class="w-full sm:w-1/2">
-                <div class="mb-2">
+                <div class="mb-2 flex justify-start">
                     <img class="w-28 h-auto" src="<?php echo $class->get_icon(); ?>">
                 </div>
-                <div class="text-base font-semibold text-gray-500"><?php echo $class->get_title(); ?></div>
+                <div class="text-xs sm:text-base font-semibold text-gray-500"><?php echo $class->get_title(); ?></div>
                 <div class="text-sm text-gray-400"><?php echo $class->get_description(); ?></div>
             </div>
             <div class="flex-grow">
@@ -129,9 +129,9 @@ function salesloo_tripay_payment_print_action($class)
     <div class="border-t border-dashed py-10">
         <div class="text-lg font-semibold text-teal-500 text-center"><?php echo 'Cara pembayaran'; ?></div>
         <?php foreach ((array)$instructions as $instruction) : ?>
-            <div class="ml-5 p-10 flex flex-col justify-center max-w-2xl rounded bg-teal-200">
+            <div class="mt-10 sm:mt-0 sm:p-10 flex flex-col justify-center rounded bg-teal-200">
                 <div class="text-base font-semibold text-gray-600"><?php echo $instruction['title']; ?></div>
-                <div class="mt-4 text-gray-500 text-sm">
+                <div class="mt-4 text-gray-500 text-xs sm:text-sm">
                     <?php foreach ((array)$instruction['steps'] as $key => $text) : ?>
                         <div class="flex">
                             <div class="w-8 text-center py-1">
