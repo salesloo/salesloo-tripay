@@ -89,8 +89,8 @@ class Setting
         ]);
 
         \salesloo_field_heading([
-            'label' => __('Moota Webhook', 'salesloo'),
-            'description' => get_rest_url(null, 'salesloo-moota/v1/webhook'),
+            'label' => __('Tripay Webhook', 'salesloo'),
+            'description' => get_rest_url(null, 'salesloo-tripay/v1/webhook'),
         ]);
 
         if (get_option('tripay_api_key') && get_option('tripay_private_key')) {

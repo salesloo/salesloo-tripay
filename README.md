@@ -19,6 +19,10 @@ For backwards compatibility, if this section is missing, the full length of the 
 Markdown parsed.
 
 == Changelog ==
+= 1.0.7 =
+
+* Fix typo api key name
+
 = 1.0.6 =
 
 * Show webhook url in setting page
