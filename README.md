@@ -19,6 +19,10 @@ For backwards compatibility, if this section is missing, the full length of the 
 Markdown parsed.
 
 == Changelog ==
+= 1.0.9 =
+
+* Fix typo on BCA virtual account name
+
 = 1.0.8 =
 
 * Fix margin instruction section on payemnt page

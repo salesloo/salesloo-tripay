@@ -22,7 +22,7 @@ class Bcava extends Payment_Method
     {
 
         $this->id            = 'tripay-BCAVA';
-        $this->name          = 'Tripay BNI VA';
+        $this->name          = 'Tripay BCA VA';
         $this->icon_id       = SALESLOO_TRIPAY_URL . '/assets/images/bcava.png';;
         $this->title         = 'BCA Virtual Account';
         $this->description   = sprintf(__('Pembayaran menggunakan transfer ke %s', 'salesloo-tripay'), $this->title);
