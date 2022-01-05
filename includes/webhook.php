@@ -32,7 +32,7 @@ class Webhook
         $invoice_query = "WHERE ID = %d AND payment_method LIKE 'tripay-%' AND status IN ('unpaid', 'checking_payment')";
         $invoice = Invoice::query($invoice_query, $payment->invoice_id)->first();
 
-        if ($payment->ID > 0 && 'PAID' == $push->status && $invoice->total == $push->total_amount) {
+        if ($payment->ID > 0 && 'PAID' == $push->status && $invoice->total <= $push->total_amount) {
             salesloo_update_invoice_status($invoice->ID, 'completed');
         }
 

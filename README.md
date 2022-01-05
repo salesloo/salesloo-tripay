@@ -19,6 +19,10 @@ For backwards compatibility, if this section is missing, the full length of the 
 Markdown parsed.
 
 == Changelog ==
+= 1.0.10 =
+
+* Fix bug webhook callback not match on live mode because there is an additional merchant fee in the total amount.
+
 = 1.0.9 =
 
 * Fix typo on BCA virtual account name
