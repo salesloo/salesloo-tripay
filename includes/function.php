@@ -75,7 +75,8 @@ function salesloo_tripay_get_payment($invoice)
 
 function salesloo_tripay_payment_print_action($class)
 {
-    if (in_array(___salesloo('invoice')->status, ['cancelled', 'completed'])) return;
+    global $___invoice;
+    if (in_array($___invoice->status, ['cancelled', 'completed'])) return;
 
     $data = ___salesloo('tripay_payment_data');
     $instructions = $data['instructions'];
