@@ -98,7 +98,7 @@ class Salesloo_Tripay
      */
     public function __construct()
     {
-        add_action('salesloo/init', [$this, 'on_plugins_loaded']);
+        add_action('plugins_loaded', [$this, 'on_plugins_loaded']);
     }
 
     /**
